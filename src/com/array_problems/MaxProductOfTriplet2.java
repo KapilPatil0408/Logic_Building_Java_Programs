@@ -1,0 +1,45 @@
+package com.array_problems;
+
+import java.util.Arrays;
+
+public class MaxProductOfTriplet2 {
+
+	public static void main(String[] args) {
+
+		int a[] = { -10, -3, 5, 6, -20 };
+		int max1 = Integer.MIN_VALUE;
+		int max2 = Integer.MIN_VALUE;
+		int max3 = Integer.MIN_VALUE;
+		int min1 = Integer.MAX_VALUE;
+		int min2 = Integer.MAX_VALUE;
+
+		for (int number : a) {
+			if (number > max1) {
+				max3 = max2;
+				max2 = max1;
+				max1 = number;
+			} else if (number > max2) {
+				max3 = max2;
+				max2 = number;
+			} else if (number > max3) {
+				max3 = number;
+			}
+
+			if (number < min1) {
+				min2 = min1;
+				min1 = number;
+			} else if (number < min2) {
+				min2 = number;
+			}
+		}
+		int resultOne = max1 * max2 * max3;
+		int resultTwo = max1 * min1 * min2;
+		
+		System.out.println("result One: "+ resultOne);
+		System.out.println("result two: " + resultTwo);
+		
+		int result=Math.max(resultOne, resultTwo);
+
+		System.out.println("Max Product of Triplet:- " + result);
+	}
+}
