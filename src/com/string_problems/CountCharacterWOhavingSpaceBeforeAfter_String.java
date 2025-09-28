@@ -16,7 +16,7 @@ public class CountCharacterWOhavingSpaceBeforeAfter_String {
 		boolean whiteSpaceAfterChar= i < c.length-1 && c[i+1]==' ';
 		boolean whiteSpaceBeforeChar= i >0 && c[i-1]==' ';
 		
-			if(!whiteSpaceAfterChar & !whiteSpaceBeforeChar) {
+			if(!whiteSpaceAfterChar && !whiteSpaceBeforeChar) {
 				count++;
 			}
 		}

@@ -9,14 +9,14 @@ public class FirstAndLastOccurenceOfCharacter {
 		int lastIndex = -1;
 
 		for (int i = 0; i < input.length(); i++) {
-			if (input.charAt(i) == 'j') {
+			if (input.charAt(i) == 'o') {
 				firstIndex = i;
 				break;
 			}
 		}
 
 		for (int i = input.length() - 1; i >= 0; i--) {
-			if (input.charAt(i) == 'j') {
+			if (input.charAt(i) == 'o') {
 				lastIndex = i;
 				break;
 			}

@@ -13,10 +13,12 @@ public class CountChangingKeyString {
 		for(int i=0; i< input.length(); i++) {
 			char currentKey= input.toCharArray()[i];
 			currentKey= Character.toLowerCase(currentKey);
+			
 			if(currentKey != lastKey) {
 				count++;
 			}
 			lastKey=currentKey;
+			
 		}
 
 		System.out.println("Total number of keys changed is= "+count);
