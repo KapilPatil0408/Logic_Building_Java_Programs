@@ -7,7 +7,7 @@ public class NthFirstNonRepCharInString {
 
 	public static void main(String[] args) {
 		String input = "swissrocks"; //wirock
-		int n = 4;
+		int n = 2;
 		char result = getNthFirstNonRepChar(input, n);
 
 		if (result != 0) {

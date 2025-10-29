@@ -4,7 +4,7 @@ public class FirstAndLastOccurenceOfCharacter {
 
 	public static void main(String[] args) {
 
-		String input = "Hello world";
+		String input = "	";
 		int firstIndex = -1;
 		int lastIndex = -1;
 

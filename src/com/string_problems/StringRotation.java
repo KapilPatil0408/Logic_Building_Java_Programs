@@ -7,7 +7,7 @@ public class StringRotation {
 		String s1 = "INTERVIEW";
 		String s2 = "VIEWINTER";
 
-		if ((s1.length() == s2.length()) && ((s1 + s1).contains(s2))) {
+		if ((s1.length() == s2.length()) && ((s1 + s2).contains(s2))) {
 			System.out.println("2 Strings are rotation of each other");
 		} else {
 			System.out.println("2 Strings are not rotation of each other");

@@ -7,7 +7,7 @@ public class NthLastNonRepCharInString {
 
 	public static void main(String[] args) {
 		String input = "abcddecbfe";
-		int n = 1;
+		int n = 2;
 		char result = getNthLastNonRepChar(input, n);
 
 		if (result != 0) {

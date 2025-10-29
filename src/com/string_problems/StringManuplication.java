@@ -8,7 +8,7 @@ public class StringManuplication {
 
 		String input = "Java is good Python is better";
 		String inputArray[] = input.split(" ");
-		StringBuilder sb= new StringBuilder();
+		StringBuilder sb = new StringBuilder();
 
 		int indexOfGood = -1;
 		int indexOfBetter = -1;
@@ -22,21 +22,21 @@ public class StringManuplication {
 			if (inputArray[i].equalsIgnoreCase("better")) {
 				indexOfBetter = i;
 			}
-			
-			if(indexOfGood !=-1 && indexOfBetter!=-1) {
+
+			if (indexOfGood != -1 && indexOfBetter != -1) {
 				break;
 			}
 		}
 		temp = inputArray[indexOfGood];
 		inputArray[indexOfGood] = inputArray[indexOfBetter];
 		inputArray[indexOfBetter] = temp;
-		
+
 		for (int i = 0; i < inputArray.length; i++) {
-            sb.append(inputArray[i]);
-            if (i < inputArray.length - 1) {
-                sb.append(" ");
-            }
-        }
+			sb.append(inputArray[i]);
+			if (i < inputArray.length - 1) {
+				sb.append(" ");
+			}
+		}
 
 		System.out.println(indexOfGood);
 		System.out.println(indexOfBetter);

@@ -13,9 +13,9 @@ public class CheckStringAnagram {
 
 	private static void checkAnagram(String input, String input1) {
 
-		if (input.length() == input.length()) {
+		if (input.length() == input1.length()) {
 			char ch[] = input.toCharArray();
-			char ch1[] = input1.toCharArray();
+			char ch1[] = input1.toCharArray();	
 			Arrays.sort(ch1);
 			Arrays.sort(ch);
 			if(Arrays.equals(ch, ch1)) {

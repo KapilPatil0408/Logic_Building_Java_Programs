@@ -7,13 +7,6 @@ public class StringManipulation {
 		String input = "99956";
 		StringBuilder sb = new StringBuilder();
 
-		/*
-		 * for (int i=0; i<input.length();i++) { int currentNumber=
-		 * Character.getNumericValue(input.charAt(i)); if ((currentNumber % 2 != 0) &&
-		 * (input.charAt(i)==input.charAt(i+1))) {
-		 * sb.append(input.charAt(i)).append("-"); }else { sb.append(input.charAt(i)); }
-		 * }
-		 */
 		for (int i = 0; i < input.length()-1; i++) {
 			sb.append(input.charAt(i));
 			int currentNumber = Character.getNumericValue(input.charAt(i));
@@ -26,6 +19,8 @@ public class StringManipulation {
 		sb.append(input.charAt(input.length()-1));
 
 		System.out.println(sb);
+		
+
 	}
 
 }

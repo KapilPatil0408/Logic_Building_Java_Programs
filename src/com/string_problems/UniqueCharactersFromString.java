@@ -17,5 +17,4 @@ public class UniqueCharactersFromString {
 		}
 		System.out.println(sb.toString());
 	}
-
 }

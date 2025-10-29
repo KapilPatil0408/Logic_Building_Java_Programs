@@ -5,7 +5,7 @@ import java.util.Stack;
 public class Balanced_Paranthesis {
 
 	public static void main(String[] args) {
-		String input = "{[((())";
+		String input = "{[]";
 		boolean b = balancedParanthesis(input);
 		System.out.println(b);
 	}
@@ -17,14 +17,14 @@ public class Balanced_Paranthesis {
 		for (char current : c) {
 			if (current == '(' || current == '{' || current == '[') {
 				stack.push(current);
-			} else {
+			} else if (current == ')' || current == '}' || current == ']') {
 				if (stack.isEmpty()) {
+					return false; // Mismatch occurred! No opening bracket is present!
+				}
+				char topChar = stack.pop();
+				if (current == ')' && topChar != '(' || current == '}' && topChar != '{'
+						|| current == ']' && topChar != '[') {
 					return false;
-				} else {
-					char topchar = stack.pop();
-					if (topchar != '(' || topchar != '{' || topchar != '[') {
-						return false;
-					}
 				}
 			}
 		}

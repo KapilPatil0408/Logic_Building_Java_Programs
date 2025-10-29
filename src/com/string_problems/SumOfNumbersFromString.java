@@ -6,7 +6,7 @@ public class SumOfNumbersFromString {
 
 		String input = "This is 1000 and it should be 20 30 50 100";
 
-		StringBuilder sb = new StringBuilder();
+//		StringBuilder sb = new StringBuilder();
 		int sum = 0;
 		String inputArray[] = input.split(" ");
 

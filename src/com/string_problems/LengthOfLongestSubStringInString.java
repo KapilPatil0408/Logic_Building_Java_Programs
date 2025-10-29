@@ -22,7 +22,7 @@ public class LengthOfLongestSubStringInString {
 		Set<Character> set = new HashSet<Character>();
 		int left = 0, maxLength = 0;
 
-		for (int right = 0; right < input.length(); right++) {
+		for (int right = 0; right < input.length(); right++) {	
 
 			char c = input.charAt(right);
 
