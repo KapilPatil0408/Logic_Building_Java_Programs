@@ -6,7 +6,10 @@ public class Interview {
 
 	public static void main(String[] args) {
 		
-		String arr[] = {"Somesh", "Nagesh", "Sarvesh", "Yogesh"};
+		
+		//solution 1
+		
+/*		String arr[] = {"Somesh", "Nagesh", "Sarvesh", "Yogesh"};
         String result[] = new String[arr.length];
 
         // Traverse the array from end to start
@@ -25,7 +28,35 @@ public class Interview {
             }
         }
         System.out.println("]");
-
+*/
+		
+		//solution 2
+		
+		 String arr[] = {"Somesh", "Nagesh", "Sarvesh", "Yogesh"};
+         //{Yog, Sarv, Nag, Som};
+ 
+		 int left= 0; 
+		 int right = arr.length -1;
+		 
+		 while(left < right){
+		     String temp = arr[left];
+		     arr[left] = arr[right];
+		     arr[right] = temp;
+		     left++;
+		     right--;
+		 }
+		 System.out.println(Arrays.toString(arr));
+		 String output[]= new String[arr.length];
+		 
+		 for(int i=0; i< arr.length; i++){
+		     if(arr[i].equals("Sarvesh")){
+		         output[i]= arr[i].substring(0,4);
+		     }else {
+		         output[i]= arr[i].substring(0,3);
+		     }
+		 }
+		 
+		 System.out.println(Arrays.toString(output));
 	}
 
 }

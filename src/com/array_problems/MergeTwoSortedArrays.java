@@ -12,7 +12,7 @@ public class MergeTwoSortedArrays {
 		int p2 = 0;
 		int p3 = 0;
 
-		while (p1 > a.length && p2 > b.length) {
+		while (p1 < a.length && p2 < b.length) {
 			if (a[p1] < b[p2]) {
 				c[p3] = a[p1];
 				p3++;
