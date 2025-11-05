@@ -1,0 +1,27 @@
+package com.string_problems;
+
+public class StringManuplication1 {
+
+	public static void main(String[] args) {
+		String input="programming is fun";    // output: - Prgrmmng S Fn
+		StringBuilder result= new StringBuilder();
+		
+		String inputArray[]= input.split(" ");
+		
+		for(String str: inputArray) {
+			String noVowels = str.replaceAll("[aeiouAEIOU]", "");
+			
+			String newString="";
+			if(!noVowels.isEmpty()) {
+				newString = Character.toUpperCase(noVowels.charAt(0)) + noVowels.substring(1);
+			}
+			
+			result.append(newString).append(" ");
+		}
+		
+		System.out.println(result.toString());
+		
+
+	}
+
+}
