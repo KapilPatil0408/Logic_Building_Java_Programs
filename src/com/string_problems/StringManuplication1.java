@@ -11,12 +11,12 @@ public class StringManuplication1 {
 		for(String str: inputArray) {
 			String noVowels = str.replaceAll("[aeiouAEIOU]", "");
 			
-			String newString="";
+			
 			if(!noVowels.isEmpty()) {
-				newString = Character.toUpperCase(noVowels.charAt(0)) + noVowels.substring(1);
+				noVowels = Character.toUpperCase(noVowels.charAt(0)) + noVowels.substring(1);
 			}
 			
-			result.append(newString).append(" ");
+			result.append(noVowels).append(" ");
 		}
 		
 		System.out.println(result.toString());
