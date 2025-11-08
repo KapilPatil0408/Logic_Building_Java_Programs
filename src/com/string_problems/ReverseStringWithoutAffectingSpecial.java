@@ -24,7 +24,7 @@ public class ReverseStringWithoutAffectingSpecial {
 				right--;
 				}
 			}
-		System.out.println(Arrays.toString(inputArray));
+		System.out.println(new String(inputArray));
 		}
 	}
 

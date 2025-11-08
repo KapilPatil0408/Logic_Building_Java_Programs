@@ -1,7 +1,5 @@
 package com.string_problems;
 
-import java.util.Arrays;
-
 public class ReverseWordsInString_Part1 {
 
 	public static void main(String[] args) {

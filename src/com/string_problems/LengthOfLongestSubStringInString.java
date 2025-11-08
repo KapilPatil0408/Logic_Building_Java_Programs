@@ -7,13 +7,13 @@ public class LengthOfLongestSubStringInString {
 
 	public static void main(String[] args) {
 
-		String input;
-		input = "abcabcbb";
-		System.out.println(longestSubstringLength(input));
-		input = "bbbbb";
-		System.out.println(longestSubstringLength(input));
-		input = "pwwkew";
-		System.out.println(longestSubstringLength(input));
+			String input;
+			input = "abcabcbb";
+			System.out.println(longestSubstringLength(input));
+			input = "bbbbb";
+			System.out.println(longestSubstringLength(input));
+			input = "pwwkew";
+			System.out.println(longestSubstringLength(input));
 
 	}
 
