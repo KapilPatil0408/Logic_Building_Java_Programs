@@ -13,6 +13,7 @@ public class PrimeNumber_InArray {
 				for (int j = 2; j < a[i]; j++) {
 					if (a[i] % j == 0) {
 						isPrime = false;
+						break;
 					}
 				}
 

@@ -1,7 +1,5 @@
 package com.array_problems;
 
-import java.util.Arrays;
-
 public class TransposeOfMatrix {
 
 	public static void main(String[] args) {

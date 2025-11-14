@@ -16,7 +16,7 @@ public class EncodeString {
 				count = 1;
 			}
 		}
-		result.append(input.charAt(input.length()-1)).append(count);
+		result.append(input.charAt(input.length() - 1)).append(count);
 		System.out.println(result);
 	}
 }

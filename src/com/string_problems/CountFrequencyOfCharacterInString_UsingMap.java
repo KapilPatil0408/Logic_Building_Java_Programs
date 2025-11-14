@@ -9,18 +9,16 @@ public class CountFrequencyOfCharacterInString_UsingMap {
 
 		String input = "madam";
 		char inputArray[] = input.toCharArray();
-		
-		Map<Character, Integer> frequencyMap= new HashMap<Character, Integer>();
-		
-		for(char character: inputArray) {
-			frequencyMap.put(character,frequencyMap.getOrDefault(character, 0)+1);
-				
-			}
-		for(char c: frequencyMap.keySet()) {
-			System.out.println(c+" "+frequencyMap.get(c));
-		}
-		}
 
+		Map<Character, Integer> frequencyMap = new HashMap<Character, Integer>();
+
+		for (char character : inputArray) {
+			frequencyMap.put(character, frequencyMap.getOrDefault(character, 0) + 1);
+
+		}
+		for (char c : frequencyMap.keySet()) {
+			System.out.println(c + " " + frequencyMap.get(c));
+		}
 	}
 
-
+}

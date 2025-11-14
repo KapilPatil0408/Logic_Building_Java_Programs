@@ -11,8 +11,8 @@ public class NameGenerator {
 		for (String name : names) {
 			maxLength = Math.max(maxLength, name.length());
 		}
-			for (int i = 0; i < maxLength; i++) {
-				for (String name : names) {
+		for (int i = 0; i < maxLength; i++) {
+			for (String name : names) {
 				if (i < name.length()) {
 					result.append(name.charAt(i));
 				}

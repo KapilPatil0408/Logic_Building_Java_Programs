@@ -1,8 +1,5 @@
 package com.string_problems;
 
-import java.util.HashMap;
-import java.util.Map;
-
 public class CountFrequencyOfCharacterInString {
 
 	public static void main(String[] args) {
@@ -22,4 +19,3 @@ public class CountFrequencyOfCharacterInString {
 		}
 	}
 }
-	
