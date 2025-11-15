@@ -20,18 +20,5 @@ public class CountFrequencyOfWords {
 		for (Map.Entry<String, Integer> entry : map.entrySet()) {
 			System.out.println(entry.getKey() + " = " + entry.getValue());
 		}
-
-//		for (String s : inputArray) {
-//			if (map.containsKey(s)) {
-//				map.put(s, map.get(s) + 1);
-//			} else {
-//				map.put(s, 1);
-//			}
-//		}
-//
-//		for (String s1 : map.keySet()) {
-//			System.out.println(s1 + " = " + map.get(s1));
-//		}
-
 	}
 }
