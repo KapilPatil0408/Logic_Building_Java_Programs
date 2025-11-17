@@ -8,14 +8,14 @@ public class ReverseArrayToRight {
 		int a[] = { 1, 2, 3, 4, 5, 6, 7 };
 		int left = 0;
 		int right = a.length - 1;
-		int n=3;
-		int k=n % a.length;
-		
+		int n = 3;
+		int k = n % a.length;
+
 		System.out.println(Arrays.toString(a));
 
 		reverseArray(a, left, right);
-		reverseArray(a, left, k-1);
-		a=reverseArray(a, k, right);
+		reverseArray(a, left, k - 1);
+		a = reverseArray(a, k, right);
 		System.out.println(Arrays.toString(a));
 
 	}
