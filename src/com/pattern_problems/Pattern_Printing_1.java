@@ -6,8 +6,8 @@ public class Pattern_Printing_1 {
 
 		for (int i = 1	; i < 5; i++) { // 0
 			for (int j = 1; j <= i; j++) {
-				System.out.print(j);
-			//	System.out.print((char) ('a' +j-1));
+			//	System.out.print(j);
+				System.out.print((char) ('a' +j-1));
 			}
 			System.out.println();
 		}

@@ -8,14 +8,14 @@ public class StringManuplation {
 
 		StringBuilder sb = new StringBuilder();
 		char[] character = input.toCharArray();
-		int oCount=0;
-		for(char ch:character)
-		if (ch == 'o' || ch == 'O') {
-			oCount++;
-			sb.append("@".repeat(oCount));
-		}else {
-			sb.append(ch);
-		}
+		int oCount = 0;
+		for (char ch : character)
+			if (ch == 'o' || ch == 'O') {
+				oCount++;
+				sb.append("@".repeat(oCount));
+			} else {
+				sb.append(ch);
+			}
 		System.out.println(sb);
 
 	}
