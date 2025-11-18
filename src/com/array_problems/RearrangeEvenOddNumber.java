@@ -25,6 +25,7 @@ public class RearrangeEvenOddNumber {
 				right--;
 			}
 		}
+		System.out.println(Arrays.toString(a));
 		int evenEnd = 0;
 
 		while (evenEnd < a.length && a[evenEnd] % 2 == 0) {
