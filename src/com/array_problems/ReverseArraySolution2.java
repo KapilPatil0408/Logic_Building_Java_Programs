@@ -1,7 +1,5 @@
 package com.array_problems;
 
-import java.util.Arrays;
-
 public class ReverseArraySolution2 {
 
 	public static void main(String[] args) {

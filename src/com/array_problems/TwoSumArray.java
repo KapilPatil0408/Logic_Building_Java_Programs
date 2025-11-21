@@ -6,16 +6,6 @@ import java.util.Map;
 public class TwoSumArray {
 
 	public static void main(String[] args) {
-
-//		int a[] = { 2, 1, 11, 6, 8, 7, 5, 3 };
-		
-//		for (int i = 0; i < a.length; i++) {
-//			for (int j = i + 1; j < a.length; j++) {
-//				if ((a[i] + a[j]) == 9) {
-//					System.out.println("sum of two numbers having index:- "+i+" and "+j);
-//				}
-//			}
-//		}
 		
 		int a[] = { 2, 5, 12, 8, 7};
 		int target = 9;

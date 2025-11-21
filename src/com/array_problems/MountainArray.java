@@ -31,3 +31,4 @@ public class MountainArray {
 		return a.length - 1 == i;
 	}
 }
+	
